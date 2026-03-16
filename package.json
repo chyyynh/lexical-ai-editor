@@ -1,0 +1,50 @@
+{
+  "name": "lexical-ai-tools",
+  "version": "0.1.0",
+  "description": "AI editing toolkit for Lexical — selection rewrite, inline diff preview, accept/reject",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "@lexical/markdown": ">=0.36.0",
+    "@lexical/react": ">=0.36.0",
+    "lexical": ">=0.36.0",
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@lexical/markdown": "^0.36.2",
+    "@lexical/react": "^0.36.2",
+    "@types/react": "^19.2.14",
+    "lexical": "^0.36.2",
+    "react": "^19.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "lexical",
+    "ai",
+    "diff",
+    "rewrite",
+    "editor",
+    "plugin",
+    "highlight",
+    "inline-edit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chyyynh/lexical-ai-tools"
+  }
+}
